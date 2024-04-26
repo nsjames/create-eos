@@ -1,21 +1,16 @@
 #!/usr/bin/env node
-import {exec, execSync} from 'child_process';
+import {exec} from 'child_process';
 import * as prompt from '@clack/prompts';
 import kleur from 'kleur';
 import fs from 'fs';
 import fetch from 'node-fetch';
 import {rimrafSync} from 'rimraf';
 
-const args = process.argv.slice(2);
-const command = args.join(' ');
-
 const execAndForward = (command) => {
     const proc = exec(command, {stdio: 'inherit'})
     proc.stdout.pipe(process.stdout);
     proc.stderr.pipe(process.stderr);
 }
-
-// execSync(`npx fuckyea create ${command}`, {stdio: 'inherit'});
 
 let cwd = process.argv[2] || '.';
 

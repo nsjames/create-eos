@@ -1,6 +1,6 @@
 {
   "name": "create-eos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI for creating projects on the EOS Network",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,9 @@
   },
   "license": "MIT",
   "homepage": "https://eosnetwork.com",
-  "bin": "./bin.js",
+  "bin": {
+    "create-eos": "./bin.js"
+  },
   "files": [
     "bin.js"
   ],
