@@ -1,0 +1,29 @@
+{
+  "name": "create-eos",
+  "version": "1.0.0",
+  "description": "A CLI for creating projects on the EOS Network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "devDependencies": {
+    "@clack/prompts": "^0.7.0",
+    "node-fetch": "^3.3.2",
+    "rimraf": "^5.0.5"
+  },
+  "dependencies": {
+    "kleur": "^4.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nsjames/create-eos"
+  },
+  "license": "MIT",
+  "homepage": "https://eosnetwork.com",
+  "bin": "./bin.js",
+  "files": [
+    "bin.js"
+  ],
+  "type": "module"
+}
